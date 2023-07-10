@@ -1,1 +1,61 @@
-Hello world
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>サイトタイトル</title>
+ <meta name="description" content="サイトキャプションを入力">
+ <meta name="keywords" content="サイトキーワードを,で区切って入力">
+ <link rel="stylesheet" href="./style/style.css">
+ </head>
+ 
+ <body>
+<h1>トップページ</h1>
+<div>
+    <input type = "text" id="message"/>
+    <button  onclick="on()">送信</button><br/>
+    <br/>
+    送信内容<input type = "text" id="disp"/>
+</div>
+<br/>
+<table>
+    <tr>
+        <th>項番</th>
+        <th>名前</th>
+        <th>年齢</th>
+        <th>性別</th>
+    </tr>
+    <tr class="tr1">
+        <td>1</td>
+        <td>佐藤</td>
+        <td>20</td>
+        <td>男性</td>
+    </tr>
+    <tr class="tr2">
+        <td>2</td>
+        <td>鈴木</td>
+        <td>25</td>
+        <td>女性</td>
+    </tr>
+    <tr class="tr1">
+        <td>3</td>
+        <td>高橋</td>
+        <td>30</td>
+        <td>男性</td>
+    </tr>
+    <tr class="tr2">
+        <td>4</td>
+        <td>田中</td>
+        <td>35</td>
+        <td>女性</td>
+    </tr>
+</table>
+<br/>
+
+<button onclick="location.href='next_page.html'">次へ</button>
+ </body>
+ <script>
+    function on(){
+        document.getElementById("disp").value = document.getElementById("message").value
+    }
+ </script>
+</html>
